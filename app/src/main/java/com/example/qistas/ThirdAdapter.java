@@ -51,11 +51,11 @@ public class ThirdAdapter extends RecyclerView.Adapter<ThirdAdapter.viewHolder> 
     }
 
 
-    /*public void filterList(ArrayList<String> searchItems) {
-        arrayList.clear();
+    public void filterList(ArrayList<String> searchItems) {
+
         arrayList.addAll(searchItems);
         this.notifyDataSetChanged();
-    }*/
+    }
 
     public class viewHolder extends RecyclerView.ViewHolder {
         TextView title;

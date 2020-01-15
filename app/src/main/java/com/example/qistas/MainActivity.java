@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements TextInterface, Ad
         addThirdList();
 
 
-        /*search.addTextChangedListener(new TextWatcher() {
+        search.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
                 
@@ -83,12 +83,12 @@ public class MainActivity extends AppCompatActivity implements TextInterface, Ad
             @Override
             public void afterTextChanged(Editable s) {
 
-                //filter(s.toString());
+                filter(s.toString());
             }
-        });*/
+        });
     }
 
-    /*private void filter(String text) {
+    private void filter(String text) {
         ArrayList<String> searchItems = new ArrayList<>();
         for (int i=0; i< titles3.length; i++)
         {
@@ -102,8 +102,11 @@ public class MainActivity extends AppCompatActivity implements TextInterface, Ad
 
         ThirdAdapter adapter = new ThirdAdapter(getApplicationContext(),searchItems, this);
         adapter.filterList(searchItems);
+        recyclerView3.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
 
-    }*/
+
+    }
 
 
     public void addFirstList() {
