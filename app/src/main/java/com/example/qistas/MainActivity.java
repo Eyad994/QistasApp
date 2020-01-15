@@ -1,8 +1,7 @@
 package com.example.qistas;
 
-import android.os.AsyncTask;
+import android.app.DatePickerDialog;
 import android.os.Bundle;
-import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -10,6 +9,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -21,8 +21,12 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements TextInterface, AdapterView.OnItemSelectedListener {
 
@@ -32,12 +36,14 @@ public class MainActivity extends AppCompatActivity implements TextInterface, Ad
     String titles2[] = {" مستأنف ضده", "مستأنف", "مدعي عليه", "مدعي", " مستأنف ضده", "مستأنف", "مدعي عليه", "مدعي"};
     String titles3[] = {"asd", "مستأنف مستأنف ضده", "مدعي عليه مستأنف ضده", "مدعي مستأنف ضده", " مستأنف ضده مستأنف ضده", "مستأنف", "مدعي عليه", "مدعي"};
 
-    EditText search;
-    TextView textView, textView2, textView3;
+    EditText search, calendarDialog;
+    TextView textView, textView2, textView3, endDateCalculated;
     Spinner spinner;
     String first = "";
     String second = "";
-    Button topRightBtn, downRightBtn, topLeftBtn, downLeftBtn;
+    Button topRightBtn, downRightBtn, topLeftBtn, downLeftBtn, calcualteBtn;
+    final Calendar myCalendar = Calendar.getInstance();
+    DatePickerDialog.OnDateSetListener date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +65,9 @@ public class MainActivity extends AppCompatActivity implements TextInterface, Ad
         downRightBtn = findViewById(R.id.down_right_btn);
         topLeftBtn = findViewById(R.id.top_left_btn);
         downLeftBtn = findViewById(R.id.down_left_btn);
+        calendarDialog = findViewById(R.id.calender_dialog);
+        calcualteBtn = findViewById(R.id.calculate_btn);
+        endDateCalculated = findViewById(R.id.end_date_calculated);
 
         firstList = new ArrayList<>();
         secondList = new ArrayList<>();
@@ -86,16 +95,54 @@ public class MainActivity extends AppCompatActivity implements TextInterface, Ad
                 filter(s.toString());
             }
         });
+
+        calcualteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (calcualteBtn.isEnabled())
+                {
+                    Date date = myCalendar.getTime();
+                    endDateCalculated.setText(addDays(date, 10));
+                } else {
+                    Toast.makeText(MainActivity.this, "يجب تعبئة تاريخ الحكم", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
+
+
+         date = new DatePickerDialog.OnDateSetListener() {
+
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                  int dayOfMonth) {
+                // TODO Auto-generated method stub
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, monthOfYear);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                updateLabel();
+            }
+
+        };
+
+        calendarDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new DatePickerDialog(MainActivity.this, date, myCalendar
+                        .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+                        myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
     }
+
 
     private void filter(String text) {
         ArrayList<String> searchItems = new ArrayList<>();
         for (int i=0; i< titles3.length; i++)
         {
-            Log.d("FOR LOOP: ", "filter: "+ thirdList.get(i));
             if (thirdList.get(i).contains(text.toLowerCase()))
             {
-                Log.d("IF : ", "filter: "+ thirdList.get(i));
                 searchItems.add(thirdList.get(i));
             }
         }
@@ -215,5 +262,37 @@ public class MainActivity extends AppCompatActivity implements TextInterface, Ad
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
+    }
+
+
+    private void updateLabel() {
+        String myFormat = "dd/MM/yyyy"; //In which you need put here
+        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+        calendarDialog.setText(sdf.format(myCalendar.getTime()));
+        calcualteBtn.setEnabled(true);
+
+    }
+
+    public static String addDays(Date date, int days) {
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        cal.add(Calendar.DATE, days);
+        Log.d("TEST", "BEFORE CHECKING: " + cal.getTime().toString());
+        // SATURDAY is the last day of week so add 2 days
+        if (cal.get(Calendar.DAY_OF_WEEK) == Calendar.FRIDAY) {
+            cal.add(Calendar.DATE, 2);
+            // SUNDAY is the first day of week so add 1 day
+        } else if (cal.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY) {
+            cal.add(Calendar.DATE, 1);
+        } // else not required as it means its one of the week day
+        Log.d("TEST", "AFTER UPDATING: " + cal.getTime().toString());
+
+        String myFormat = "dd/MM/yyyy"; //In which you need put here
+        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+        Log.d("Finally", "addDays: "+ sdf.format(cal.getTime()));
+
+        return sdf.format(cal.getTime());
     }
 }

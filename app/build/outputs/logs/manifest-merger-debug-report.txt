@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-25:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\ejaabo\.gradle\caches\transforms-2\files-2.1\6119d746697059b7e1b74aab4d181f56\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ejaabo\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\ejaabo\.gradle\caches\transforms-2\files-2.1\ceb81553a8d4d1147c847656f2ca2121\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -36,25 +36,25 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\ejaabo\.gradle\caches\transfor
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ejaabo\.gradle\caches\transforms-2\files-2.1\63647da4654da12a6f2785cfbbad8123\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\ejaabo\.gradle\caches\transforms-2\files-2.1\733fc1d306cee2c05d3e1fb0b7527020\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\ejaabo\.gradle\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:3:5-33
 		INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:6:5-20:19
+ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:5:5-23:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ejaabo\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ejaabo\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.1.0] C:\Users\ejaabo\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:5-89
@@ -64,31 +64,39 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ej
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\ejaabo\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:9:9-41
+		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:8:9-43
+		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:12:9-40
-activity#com.example.qistas.MainActivity
-ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:13:9-19:20
+		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.example.qistas.SecondActivity
+ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:13:19-47
+		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:12:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:14:13-18:29
+ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:16:27-74
+activity#com.example.qistas.LoginActivity
+ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:19:9-21:20
+	android:name
+		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:19:19-48
+activity#com.example.qistas.MainActivity
+ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:22:9-59
+	android:name
+		ADDED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml:22:19-47
 uses-sdk
 INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ejaabo\AndroidStudioProjects\Qistas\app\src\main\AndroidManifest.xml

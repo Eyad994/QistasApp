@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="لوريم ابسوم"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="لوريم ابسوم"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="280dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="لوريم ابسوم"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="لوريم ابسوم"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="430dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="لوريم ابسوم"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="لوريم ابسوم"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="130dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/red_facebook"/>
+
+    <ImageView
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="180dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/twitter"/>
+
+    <ImageView
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="230dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/whatsapp"/>
+    <TextView
+        android:layout_marginTop="670dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="8pt"
+        android:text="www.qistas.com"/>
+</RelativeLayout>
