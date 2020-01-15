@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Modad.Jo</string>
+    <string name="facebook_application_id" translatable="false">502978327003212</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb502978327003212</string>
+
+    <string name="country_prompt">Choose a country</string>
+    <string-array name="country_arrays">
+        <item>يوم</item>
+        <item>يومان</item>
+        <item>يوم</item>
+    </string-array>
+
+</resources>
